@@ -1,12 +1,94 @@
 <!DOCTYPE html>
 <html lang="es">
+
+<!-- head: contiene todo la metadatos y elementos que actuan detras de la web -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Introduccion a Formulario</title>
 </head>
+
 <body>
-    
+    <main>
+        <h2>Este es un Formulario</h2>
+        <h3>Ingresa tu nombre:</h3>
+        <!-- Crear formularios <form> -->
+        <form action="/enviar-respuesta-servidor">
+            <!-- input: ingreso de datos
+            placeholder: Pista para el usuario
+            required: Campo obligatorio -->
+            <input type="text" placeholder="Tu nombre completo" required>
+
+            <br>
+
+            <!-- Botones de Radio 
+            label: es una etiqueta para seleccionar el texto.
+            for y id deben ser igual para asociar la etiqueta con la opción.
+            value: Especificamos el valor que se enviara al servidor.
+            name: indicara que es un Grupo de Botones de Radio.
+            checked: Seleccion por default. -->
+            <label for="opcion1">
+                <input id="opcion1" type="radio" value="opcion1" name="Grupo" checked>Opción 1
+            </label>
+            <br>
+            <label for="opcion2">
+                <input id="opcion2" type="radio" value="opcion2" name="Grupo">Opción 2
+            </label>
+            <br>
+            <label for="opcion3">
+                <input id="opcion3" type="radio" value="opcion3" name="Grupo">Opción 3
+            </label>
+            <br>
+            <label for="opcion4">
+                <input id="opcion4" type="radio" value="opcion4" name="Grupo">Opción 4
+            </label>
+
+            <!-- Salto de linea <br> break-->
+            <br>
+
+            <!-- Casillas de Verificación checkbox
+            name: Aqui en los checkbox no tiene el mismo comportamiento que los ButtonRadio -->
+            <label for="checkbox1">
+                <input id="checkbox1" type="checkbox" value="opcion1" name="GrupoCheckbox" checked>Opción 1
+            </label>
+            <br>
+            <label for="checkbox2">
+                <input id="checkbox2" type="checkbox" value="opcion2" name="GrupoCheckbox">Opción 2
+            </label>
+            <br>
+            <label for="checkbox3">
+                <input id="checkbox3" type="checkbox" value="opcion3" name="GrupoCheckbox">Opción 3
+            </label>
+            <br>
+            <label for="checkbox4">
+                <input id="checkbox4" type="checkbox" value="opcion4" name="GrupoCheckbox">Opción 4
+            </label>
+            <br>
+            <!-- submit: cuando es presionado, envia el formulario al que pertenece -->
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Elemento DIV: Es un contenedor generico, con un mayor proposito de diseño CSS -->
+        <div>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li>Item 4</li>
+            </ul>
+        </div>
+
+
+    </main>
+
+    <!-- Pie de Página: su declaracion debe ser despues de <main>, xq no forma parte del elemento principal -->
+    <!-- small: solo es una etiqueta donde el texto sera más pequeño -->
+    <footer>
+        <p><small>Sin Derechos de Autor - <a href="https://www.freecodecamp.org" target="_blank"
+                    rel="noopener noreferrer">freeCodeCamp.org</a></small></p>
+    </footer>
+
 </body>
+
 </html>

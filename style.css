@@ -1,0 +1,7 @@
+/* CSS: Cascading Style Sheets (Hojas de Estilo en Cascada)
+    Aqui definimos el estilo de la pagina.
+    Tres opciones de delcarar nuestro conjunto de estilos:
+    - Estilos en Linea: El estilo se añade directamente a la etiqueta de apertura del elemento HTML.
+    - El uso del elemento <style>: Añadimos el elemento <style en <head> para describir el estilo.
+    - Archivo CSS: Creamos un archivo de tipo .css para definir  el estilo de la página.
+*/

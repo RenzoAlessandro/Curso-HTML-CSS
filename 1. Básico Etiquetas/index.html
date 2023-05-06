@@ -1,4 +1,6 @@
 <!-- 
+    HTML: HyperText Markup Language o Lenguaje de Etiqueta de Hipertexto
+    Aqui definimos la estructura y contenido de la página.
 
     Elemento/Element: Componente básico de un archivo HTML. Usamos elementos 
     para definir la estructura de una página web en un archivo HTML.
@@ -15,7 +17,7 @@
 
 <!-- Tipo de documento -->
 <!DOCTYPE html> 
-<!-- Elemento raiz -->
+<!-- Elemento raiz  / lang = lenguaje de la página-->
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -25,16 +27,61 @@
 </head>
 <body>
     <!-- Encabezado -->
-    <h1>Hola, Mundo</h1>
-    <h2>Hola, Mundo</h2>
-    <h3>Hola, Mundo</h3>
-    <h4>Hola, Mundo</h4>
-    <h5>Hola, Mundo</h5>
-    <h6>Hola, Mundo</h6>
+    <h1>Encabezado h1</h1>
+    <h2>Encabezado h2</h2>
+    <h3>Encabezado h3</h3>
+    <h4>Encabezado h4</h4>
+    <h5>Encabezado h5</h5>
+    <h6>Encabezado h6</h6>
 
     <!-- Parrafo -->
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <h4 id="parrafo-1">Párrafo 1:</h4>
+    <p lang="en">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    <h4 id="parrafo-2">Párrafo 2:</h4>
+    <p lang="en">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     
+    <!-- Main: Representa el contenido principal <body> en un documento o aplicación.-->
+    <main>
+        <!-- imagenes en internet -->
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Descripción alternativa.">
+
+        <!-- imagenes en nuestra carpeta -->
+        <img src="imagenes/lasagna.jpg" alt="Descripción alternativa 2.">
+
+        <!-- Enlaces externos: <a> = anchor o enlace -->
+        <!-- rel = es bueno colocar noopener noreferrer para evitar ataque tabnabbing -->
+        <p>Haz <a href="https://www.freecodecamp.org" target="_blank" rel="noopener noreferrer">click aquí</a> para ver imágenes de gatos.</p>
+
+        <!-- Enlaces externos en imagenes  -->
+        <a href="https://www.freecodecamp.org" target="_blank" rel="noopener noreferrer"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Descripción alternativa."></a>
+
+        <!-- Enlaces a secciones internos -->
+        <a href="#parrafo-1">Ir al párrafo 1</a>
+        <a href="#parrafo-2">Ir al párrafo 2</a>
+
+        <!-- Listas No Ordenadas <ul> Unordered List / <li> List Item -->
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+
+        <!-- Listas Ordenadas <ol> Ordered List -->
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ol>
+
+        <!-- Letras en Negrita <strong>, cursiva <em> y texto tachado <s> -->
+        <p lang="en"><strong>Lorem Ipsum</strong> is <em>simply dummy text</em> of the printing and <s>typesetting industry</s>.</p>
+
+        <!-- Linea Horizontal o Horizontal Rule-->
+        <hr>
+
+    </main>
+
 </body>
 </html>
