@@ -1,0 +1,42 @@
+/* Padding: Es la distancia entre el BORDE de un elemento y su CONTENIDO. */
+
+.div-padding {
+    background-color: crimson;
+}
+
+.img-padding{
+    padding: 15px;
+    background-color: yellow;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/* Margin: Es la distancia entre el BORDE de un elemento y el BORDE DE OTROS ELEMENTOS. */
+
+.div-margin {
+    background-color: crimson;
+}
+
+.img-margin{
+    margin: 15px;
+    background-color: yellow;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/* Padding VS. Margin */
+
+.div-versus {
+    background-color: crimson;
+}
+
+.img-versus{
+    padding: 15px;
+    margin: 15px;
+    background-color: yellow;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}

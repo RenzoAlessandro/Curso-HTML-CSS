@@ -5,8 +5,118 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introducción a CSS</title>
+    <style>
+        h3 {
+            color: rgb(40, 115, 255);
+        }
+
+        p {
+            color: cadetblue;
+        }
+    </style>
+
+    <!-- Importamos algunas familias de fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Londrina+Shadow&display=swap" rel="stylesheet">
+    
+    <!-- Linqueamos los estilos al html -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+    <h1>App de Gatos</h1>
+
+    <h2 style="color: blue;">App de Gatos</h2>
+
+    <h3>App de Gatos</h3>
+    <h3>App de Gatos</h3>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+    <!-- Selectores de Clase -->
+    <p>Lista No Ordenada:</p>
+    <ul class="lista-listas">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ul>
+
+    <p>Lista Ordenada:</p>
+    <ol class="lista-listas">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+    </ol>
+
+    <!-- Estilo en Imagenes -->
+    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" class="imagen-de-gato bordes-redondeados">
+
+    <!-- Color de Fondo de un DIV -->
+    <div class="contenedor-listas">
+        <p>Lista No Ordenada:</p>
+        <ul class="lista-listas">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
     
+        <p>Lista Ordenada:</p>
+        <ol class="lista-listas">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ol>
+    </div>
+
+    <!-- Selectores de ID -->
+    <h2 id="titulo-selector-id">Selectores de ID</h2>
+
+    <!-- Selectores de Atributo -->
+    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Descripción alternativa.">
+
+    <br>
+    <label for="opcion1">
+        <input id="opcion1" type="radio" value="opcion1" name="Grupo" checked>Opción 1
+    </label>
+    <br>
+    <label for="opcion2">
+        <input id="opcion2" type="radio" value="opcion2" name="Grupo">Opción 2
+    </label>
+    <br>
+    <label for="opcion3">
+        <input id="opcion3" type="radio" value="opcion3" name="Grupo">Opción 3
+    </label>
+    <br>
+    <label for="opcion4">
+        <input id="opcion4" type="radio" value="opcion4" name="Grupo">Opción 4
+    </label>
+    <br>
+    <label for="checkbox1">
+        <input id="checkbox1" type="checkbox" value="opcion1" name="GrupoCheckbox" checked>Opción 1
+    </label>
+    <br>
+    <label for="checkbox2">
+        <input id="checkbox2" type="checkbox" value="opcion2" name="GrupoCheckbox">Opción 2
+    </label>
+    <br>
+    <label for="checkbox3">
+        <input id="checkbox3" type="checkbox" value="opcion3" name="GrupoCheckbox">Opción 3
+    </label>
+    <br>
+    <label for="checkbox4">
+        <input id="checkbox4" type="checkbox" value="opcion4" name="GrupoCheckbox">Opción 4
+    </label>
+    <br>
+
+    <footer>
+        <p><small>Sin Derechos de Autor - <a href="https://www.freecodecamp.org" target="_blank"
+                    rel="noopener noreferrer">freeCodeCamp.org</a></small></p>
+    </footer>
+
+
 </body>
 </html>

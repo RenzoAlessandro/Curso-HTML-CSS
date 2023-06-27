@@ -4,4 +4,88 @@
     - Estilos en Linea: El estilo se añade directamente a la etiqueta de apertura del elemento HTML.
     - El uso del elemento <style>: Añadimos el elemento <style en <head> para describir el estilo.
     - Archivo CSS: Creamos un archivo de tipo .css para definir  el estilo de la página.
+
+    Regla:
+        - Selector (Tipo, Clase, ID, Universal, Atributo):
+        Declaracion: 
+            - Propiedad:
+            - Valor:
 */
+
+/* Selectores de Clase: Evitamos reglas duplicadas */
+.lista-listas {
+    color: chocolate;
+}
+
+
+/* Selectores de Tipo */
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 25px;
+}
+
+/* Familia de Fuentes */
+h2 {
+    font-family: "Verdana";
+}
+
+/* Google Fonts, con fuentes de respaldo */
+h3 {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+h1 {
+    font-family: 'Londrina Shadow', cursive;
+}
+
+/* Cambiar el tamaño de las imagenes */
+.imagen-de-gato {
+    /* Ancho */
+    width: 200px;
+
+    /* Borde */
+    border-width: 5px;
+    border-color: blue;
+    border-style: solid dashed dotted double;
+}
+
+/* Esquinas Redondeado */
+.bordes-redondeados {
+    border-radius: 20px;
+}
+
+/* Color de Fondo de un DIV  */
+.contenedor-listas {
+    background-color:greenyellow;
+}
+
+/* Selectores de ID: Podemos actuar sobre este elemento de forma unica, incluso con javascript */
+#titulo-selector-id {
+    font-size: 30px;
+    color: aquamarine;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+/* Selectores de Atributo: */
+img[alt] {
+    border-width: 10px;
+    border-color: red;
+    border-style: solid;
+}
+
+[type="radio"] {
+    margin: 20px;
+}
+
+input[type="checkbox"] {
+    margin: 10px;
+}
+
+a[href="https://www.freecodecamp.org"] {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
